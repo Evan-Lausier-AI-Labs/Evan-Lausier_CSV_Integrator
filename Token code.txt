@@ -1,6 +1,5 @@
 Warning: For security reasons, this is the only time that the Consumer Key and Consumer Secret values are displayed. After you leave this page, they cannot be retrieved from the system. If you lose or forget these credentials, you will need to reset them to obtain new values.
 Treat the values for Consumer Key and Consumer Secret as you would a password. Never share these credentials with unauthorized individuals and never send them by email.
 CONSUMER KEY
-d28cb2d9d36fd9331a7e09da4c5c17701b4dfc1bb8c2f4c98e278fd5b09be92c
+
 CONSUMER SECRET
-c2b5cf1c74c16e8e8e50778c4ad4bbf5a53b4b75af30712f0b239b830d832370
