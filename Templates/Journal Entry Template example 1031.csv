@@ -1,0 +1,93 @@
+tranId,subsidiary,currency,exchangerate,postingperiod,tranDate,reversalDate,isDeferred,journalItemLine_accountRef,journalItemLine_debitAmount,journalItemLine_creditAmount,journalItemLine_memo,journalItemLine_entityRef,journalItemLine_departmentRef,journalItemLine_classRef,journalItemLine_locationRef,journalItemLine_taxCodeRef,journalItemLine_taxCodeAmount,Company,Account,"Direct, Assumed, Ceded",Profit Center,Project,Affiliate,Risk Location
+Entry No.,Subsidiary,Currency,Exchange Rate,Posting Period,Date,Reversal Date,Defer Entry,Account,Debit,Credit,Memo,Name,Department,Class,Location,Tax Code,Tax Amount,,,,,,,
+"Header
+
+Enter a unique JE Entry Number in this field.","HEADER
+
+This is a reference to the subsidiary which must be created in your Setup > Company > Subsidiaries prior to import.
+
+In case you want to refer a child subsidiary the complete hierarchy must be provided in the format: Parent Subsidiary Name : Child Subsidiary Name. 
+
+This field becomes mandatory if you are using a NetSuite One-World account.","HEADER
+
+This field is the currency used for all amounts in this journal entry.
+
+For regular journal entries, currency defaults to the base currency of your company or root parent subsidiary, and can be changed to any other currency available in your account.","HEADER
+
+If the default exhange rate will not be used, enter the exchange rate for this transaction.","HEADER
+This element is a reference to a posting period that
+must exist in your account prior to importing.
+The accounting period to which the transaction is being posted to must be OPEN.
+","HEADER
+
+Enter the date on which the JE is to be created. Date should be entered in the format that is supported by your account. 
+
+The date preference can be set by navigating to Setup > Company > General Preferences.","HEADER
+
+Enter the date for the reversing entry to be posted. Date should be entered in the format that is supported by your account. 
+
+The date preference can be set by navigating to Setup > Company > General Preferences.","HEADER
+
+Put TRUE if the reversal entry is to be deferred to the date specified in column G.","LINES
+
+This is a reference to the GL account against which the amounts have to be posted.  The complete hierarchy of the accounts should be provided if you want to refer to a child account. The expected format is Child Account Number Parent Account Name : Child Account Name.
+
+The account must be setup in Lists > Accounting > Accounts prior to import.","LINES
+
+Enter the debit amount in this field. ","LINES
+
+Enter the credit amount in this field. ","LINES
+
+Memo for the current line item","LINES
+
+References an existing entity record. The entity records must exist in your account prior to importing the JE.  If the customer to be referred is a child customer, the customer ids with complete parent-child will have to be provided. 
+
+e.g. Parent CustomerID : Child CustomerID
+","LINES
+
+
+
+Provide the reference to the Department in this field.  In order to reference a sub department provide the complete hierarchy in the format Parent Department : Child department.
+
+This should be created in Setup > Company > Departments prior to import.
+","LINES
+
+Provide the reference to the class in this field.  In order to reference a sub class provide the complete hierarchy in the format: Parent Class : Child Class.
+
+This should be created in Setup > Company > Classes prior to import. ","LINES
+
+Provide the reference to the Location in this field. In order to reference a sub Location provide the complete hierarchy in the format Parent Location : Child Location.
+
+This should be created in Setup > Company > Locations prior to import. ","LINES
+
+Reference to a Tax Code that must exist in Setup > Accounting > Tax Codes prior to import.","LINES
+
+Enter the Tax Amount in this field",,,,,,,
+Alpha Numeric,List,List,Number,Date,Date,Date,Boolean,List,Double,Double,Alpha Numeric,List,List,List,List,List,Double,,,,,,,
+String Max Size 45,List,List,,MMM/YYYY,mm/dd/yyyy,mm/dd/yyyy,TRUE/FALSE,List,,,Max String Size 999,List,List,List,List,List,List,,,,,,,
+1152,,,,,5/17/2008,7/20/2008,TRUE,Accounts Receivable,500,,,,,,,,,,,,,,,
+1152,,,,,5/17/2008,7/20/2008,TRUE,Sales : Sales Merchandise,,500,,,,,,,,,,,,,,
+,,USD,,,9/30/2018,,,Loss Incurred-Paid Loss-Direct,"143,738.38",,Sept Prem Losses,,,,,,,3911,5001000100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Incurred-Paid Loss-Direct,"1,635,559.61",,Sept Prem Losses,,,,,,,3911,5001000100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Adj Exp-Direct-Paid D&CC (ALAE),"295,783.00",,Sept Prem Losses,,,,,,,3911,5016000100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Adj Exp-Direct-Paid D&CC (ALAE),"207,186.10",,Sept Prem Losses,,,,,,,3911,5016000100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Other Assets - TPA - Claims Advances,,"350,924.48",Sept Prem Losses,,,,,,,3911,1703000270,,70409,,,
+,,USD,,,9/30/2018,,,Other Assets - TPA - Claims Advances,,"1,931,342.61",Sept Prem Losses,,,,,,,3911,1703000270,,70408,,,
+,,USD,,,9/30/2018,,,Premium Income-Direct,,"1,056,823.74",Sept Prem Losses,,,,,,,3911,4000800100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Premium Income-Direct,,"16,304.00",Sept Prem Losses,,,,,,,3911,4000800100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Commission Expenses-Direct,"4,277.38",,Sept Prem Losses,,,,,,,3911,5100600100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Commission Expenses-Direct,"264,205.90",,Sept Prem Losses,,,,,,,3911,5100600100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Premium & Insurance Rec-Current-Direct,"792,617.84",,Sept Prem Losses,,,,,,,3911,1400300100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Premium & Insurance Rec-Current-Direct,"12,026.62",,Sept Prem Losses,,,,,,,3911,1400300100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Incurred-Paid Loss-Direct,"77,828.07",,Sept Prem Losses,,,,,,,3912,5001000100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Incurred-Paid Loss-Direct,"517,519.76",,Sept Prem Losses,,,,,,,3912,5001000100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Adj Exp-Direct-Paid D&CC (ALAE),"140,748.73",,Sept Prem Losses,,,,,,,3912,5016000100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Loss Adj Exp-Direct-Paid D&CC (ALAE),"7,084.24",,Sept Prem Losses,,,,,,,3912,5016000100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Other Assets - TPA - Claims Advances,,"84,912.31",Sept Prem Losses,,,,,,,3912,1703000270,,70408,,,
+,,USD,,,9/30/2018,,,Other Assets - TPA - Claims Advances,,"658,268.49",Sept Prem Losses,,,,,,,3912,1703000270,,70409,,,
+,,USD,,,9/30/2018,,,Premium Income-Direct,,"30,253.00",Sept Prem Losses,,,,,,,3912,4000800100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Premium Income-Direct,,"2,770,270.00",Sept Prem Losses,,,,,,,3912,4000800100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Commission Expenses-Direct,"864,311.52",,Sept Prem Losses,,,,,,,3912,5100600100,,70409,,,USAXX9
+,,USD,,,9/30/2018,,,Commission Expenses-Direct,"9,048.58",,Sept Prem Losses,,,,,,,3912,5100600100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Premium & Insurance Rec-Current-Direct,"21,204.42",,Sept Prem Losses,,,,,,,3912,1400300100,,70408,,,USAXX9
+,,USD,,,9/30/2018,,,Premium & Insurance Rec-Current-Direct,"1,905,958.48",,Sept Prem Losses,,,,,,,3912,1400300100,,70409,,,USAXX9
