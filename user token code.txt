@@ -1,0 +1,6 @@
+Warning: For security reasons, this is the only time that the Token ID and Token Secret values are displayed. After you leave this page, they cannot be retrieved from the system. If you lose or forget these credentials, you will need to reset them to obtain new values.
+Treat the values for Token ID and Token Secret as you would a password. Never share these credentials with unauthorized individuals and never send them by email.
+TOKEN ID
+21d44772acbee214a1561171bd8bcfe7930ff1de6520c5a4e4d90fd09a9a3b27
+TOKEN SECRET
+339dcbc8ea39f81c6454ac1a6fe566e38b89bfa7b854a9f6757e7c4ce7cacbdf
